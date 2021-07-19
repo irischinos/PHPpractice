@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP begginer</title>
+</head>
+<body>
+    <header>
+        <h1>Best pizza ever!</h1>
+        <h3>Come, and get some homie!</h3>
+    </header>
+    <main>
+        <section id="contact-form">
+            <!-- En method puede ser GET o POST -->
+            <h2>Place order</h2>
+            <form method="POST" action="order.php" >
+                <input name="address1" placeholder="Address line 1" type="text" class="lg-input"><br>
+                <input name="address2" placeholder="Address line 2" type="text" class="lg-input"><br>
+                <input name="city" placeholder="City" class="sm-input">
+                <input name="state" placeholder="State" type="text" class="sm-input"><br>
+                <input name="zip" placeholder="Zip Code" type="text" class="sm-input"><br>
+                <br>
 
+                <h4>Ingredients</h4>
+                <input name="pepperoni" type="checkbox">Pepperoni <br>
+                <input name="pineapple" type="checkbox">Pineapple <br>
+                <input name="bacon" type="checkbox">Bacon <br>
+                <input name="sausage" type="checkbox">Sausage <br>
+                <input name="onion" type="checkbox">Onion <br>
+            </form>
+        </section>  
+    </main>
+    
+</body>
+</html>
