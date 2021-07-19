@@ -15,7 +15,11 @@
         <section id="contact-form">
             <!-- En method puede ser GET o POST -->
             <h2>Place order</h2>
-            <form method="POST" action="order.php" >
+            <form method="GET" action="order.php" >
+                <h4>Delivery</h4>
+                <!-- Creating RADIOBUTTONS changing type to text to radio -->
+                <input name="delivery" type="radio" value="delivery">Delivery <br>
+
                 <input name="address1" placeholder="Address line 1" type="text" class="lg-input"><br>
                 <input name="address2" placeholder="Address line 2" type="text" class="lg-input"><br>
                 <input name="city" placeholder="City" class="sm-input">
