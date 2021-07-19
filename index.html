@@ -18,7 +18,8 @@
             <form method="GET" action="order.php" >
                 <h4>Delivery</h4>
                 <!-- Creating RADIOBUTTONS changing type to text to radio -->
-                <input name="delivery" type="radio" value="delivery">Delivery <br>
+                <input name="deliveryMethod" type="radio" value="delivery">Delivery <br>
+                <input name="deliveryMethod" type="radio" value="pickup">Pickup <br>
 
                 <input name="address1" placeholder="Address line 1" type="text" class="lg-input"><br>
                 <input name="address2" placeholder="Address line 2" type="text" class="lg-input"><br>
@@ -26,14 +27,20 @@
                 <input name="state" placeholder="State" type="text" class="sm-input"><br>
                 <input name="zip" placeholder="Zip Code" type="text" class="sm-input"><br>
                 <br>
+
+                <!-- Creating a SELECT BOX, it's like a dropdown button with the SELECT (tag) -->
+                <h4>Size</h4>
+                <select name="size" id="">
+                    
+                </select>
                 
                 <!-- Para hacer checkbox se cambia el TYPE de text a checkbox -->
                 <h4>Ingredients</h4>
-                <input name="pepperoni" type="checkbox">Pepperoni <br>
-                <input name="pineapple" type="checkbox">Pineapple <br>
-                <input name="bacon" type="checkbox">Bacon <br>
-                <input name="sausage" type="checkbox">Sausage <br>
-                <input name="onion" type="checkbox">Onion <br>
+                <input name="ingredient" type="checkbox" value="pepperoni">Pepperoni <br>
+                <input name="ingredient" type="checkbox" value="pineapple">Pineapple <br>
+                <input name="ingredient" type="checkbox" value="bacon">Bacon <br>
+                <input name="ingredient" type="checkbox" value="sausage">Sausage <br>
+                <input name="ingredient" type="checkbox" value="onion">Onion <br>
             </form>
         </section>  
     </main>
