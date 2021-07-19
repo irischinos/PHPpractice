@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>PHP begginer</title>
 </head>
-<body>
+<body class="banner">
     <header>
         <h1>Best pizza ever!</h1>
         <h3>Come, and get some homie!</h3>
+        <br><br>
+        <h3 class="letter">We</h3>
+        <h3 class="letter">are</h3>
+        <h3 class="letter">the</h3>
+        <h3 class="letter">B E S T!</h3>
     </header>
     <main>
         <section id="contact-form">
             <!-- En method puede ser GET o POST -->
             <h2>Place order</h2>
             <form method="GET" action="order.php" >
-                <h4>Delivery</h4>
                 <!-- Creating RADIOBUTTONS changing type to text to radio -->
                 <input name="deliveryMethod" type="radio" value="delivery">Delivery <br>
                 <input name="deliveryMethod" type="radio" value="pickup">Pickup <br>
@@ -50,7 +55,8 @@
                 <!-- Adding a button to submit -->
                 <button type="submit">Place order</button>
             </form>
-        </section>  
+        </section> 
+
     </main>
     
 </body>
